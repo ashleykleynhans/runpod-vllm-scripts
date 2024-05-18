@@ -20,6 +20,12 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
+### Set your RunPod API key and Endpoint ID
+
+1. Copy the file `.env.example` to a new file called `.env`.
+2. Edit the `.env` file and set your RunPod API key and Endpoint ID.
+3. Save the file.
+
 ## Scripts
 
 | Script Name                   | Description                        |

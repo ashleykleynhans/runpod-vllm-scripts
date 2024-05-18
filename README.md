@@ -20,10 +20,18 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### Set your RunPod API key and Endpoint ID
+### Set your RunPod API key, RunPod Endpoint ID and Model
+
+> [!NOTE]
+> The `MODEL` is the path to the model on Hugging Face Hub
+> and not the full URL.  For example,
+> https://huggingface.co/cognitivecomputations/dolphin-2.9.1-llama-3-8b
+> would be `cognitivecomputations/dolphin-2.9.1-llama-3-8b`.
 
 1. Copy the file `.env.example` to a new file called `.env`.
-2. Edit the `.env` file and set your RunPod API key and Endpoint ID.
+2. Edit the `.env` file and set your RunPod API key,
+   RunPod Endpoint ID, and model path to the model on
+   Hugging Face Hub.
 3. Save the file.
 
 ## Scripts

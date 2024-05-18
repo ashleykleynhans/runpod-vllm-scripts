@@ -17,3 +17,4 @@ class Timer:
 env = dotenv_values('.env')
 RUNPOD_API_KEY = env.get('RUNPOD_API_KEY', None)
 RUNPOD_ENDPOINT_ID = env.get('RUNPOD_ENDPOINT_ID', None)
+MODEL = env.get('MODEL', None)

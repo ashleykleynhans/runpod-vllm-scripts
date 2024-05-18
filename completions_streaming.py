@@ -3,9 +3,6 @@ from util import *
 from openai import OpenAI
 
 
-MODEL = 'cognitivecomputations/dolphin-2.9.1-llama-3-8b'
-
-
 if __name__ == '__main__':
     client = OpenAI(
         api_key=RUNPOD_API_KEY,

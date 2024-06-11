@@ -18,6 +18,7 @@ git clone https://github.com/ashleykleynhans/runpod-vllm-scripts.git
 cd runpod-vllm-scripts
 python3 -m venv venv
 source venv/bin/activate
+pip3 install -r requirements.txt
 ```
 
 ### Set your RunPod API key, RunPod Endpoint ID and Model

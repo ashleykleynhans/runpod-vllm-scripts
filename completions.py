@@ -3,6 +3,8 @@ from util import *
 from openai import OpenAI
 
 
+PROMPT = 'Who was president of the US in 1998?'
+
 if __name__ == '__main__':
     client = OpenAI(
         api_key=RUNPOD_API_KEY,
@@ -13,13 +15,14 @@ if __name__ == '__main__':
     timer = Timer()
     response = client.completions.create(
         model=MODEL,
-        prompt="Who was president of the US in 1998?",
+        prompt=PROMPT,
         temperature=0,
-        max_tokens=100,
+        max_tokens=2000,
     )
     total_time = timer.get_elapsed_time()
 
     # Print the response
+    print(PROMPT)
     print(response.choices[0].text)
     print('-----')
     print(f'Time taken: {total_time} seconds')

@@ -16,11 +16,11 @@ if __name__ == '__main__':
         messages=[
             {
                 "role": "user",
-                "content": "Who was president of the US in 1998?"
+                "content": "How do I make bread?"
             }
         ],
         temperature=0,
-        max_tokens=100,
+        max_tokens=2000
     )
     total_time = timer.get_elapsed_time()
 
